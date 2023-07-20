@@ -1,0 +1,20 @@
+:root {
+    --black: #14110F;
+    --white: #F3F3F4;
+    --gray: #7E7F83;
+    --jet: #34312D;
+    --dun: #D9C5B2;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header {
+    background-color: var(--dun);
+}
