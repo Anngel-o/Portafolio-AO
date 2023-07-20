@@ -1,20 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Montserrat:wght@400;700&family=Roboto:ital,wght@1,300&family=Rubik&display=swap');
+
 :root {
     --black: #14110F;
     --white: #F3F3F4;
     --gray: #7E7F83;
     --jet: #34312D;
     --dun: #D9C5B2;
+    --chocolate: #4C212A;
 }
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
+    background-color: var(--white);
+    color: var(--jet);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 2rem;
+ }
+
+ul {
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.menu {
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+section {
+    background-color: var(--dun);    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.seccion {
+    padding: 1rem;
+    gap: 1rem;
+    display: grid;
+}
+
+.principal {
+    background-color: var(--white);
+}
+
+.proyectos {
+    background-color: var(--white);
+}
+
+.contacto {
+    background-color: var(--white);
+}
+
+.sobre-mi {
     background-color: var(--black);
     color: var(--white);
 }
 
-header {
-    background-color: var(--dun);
+.trayectoria {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+
+
+footer {
+    background-color: var(--black);
+    color: var(--dun);
 }
