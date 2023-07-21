@@ -21,7 +21,7 @@ body {
     color: var(--white);
     text-align: center;
     font-size: 1.25rem;
-    background-image: url(/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
 }
 
 header {
