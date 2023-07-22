@@ -21,7 +21,11 @@ body {
     color: var(--white);
     text-align: center;
     font-size: 1.25rem;
+
     background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 55%;
+    width: 100%; 
 }
 
 header {
@@ -84,7 +88,8 @@ section {
 
 .principal {
     background-color: rgba(240, 248, 255, 0.326);
-    opacity: 1;
+    width: 100%;
+    /* opacity: 1; */
     display: flex;
     margin-top: 6.5rem;
     margin-bottom: 6.5rem;
@@ -108,12 +113,25 @@ section {
 .hola-mundo {
     margin-left: 4rem;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 1000;
 }
 
 .proyectos {
     background-color: var(--dun);
     color: var(--black);
+}
+
+.proyectos-contenedor {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto {
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
 }
 
 .contacto {
