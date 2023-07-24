@@ -21,6 +21,7 @@ body {
     color: var(--white);
     text-align: center;
     font-size: 1.25rem;
+    font-weight: 700;
 
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
@@ -45,7 +46,7 @@ a {
     padding: 1rem;
 }
 
-a:hover {
+.liga:hover {
     background-color: var(--dun);
     color: var(--black);
     border-radius: 2rem;
@@ -68,7 +69,7 @@ a:hover {
     text-decoration: none;
     list-style-type: none;
     display: flex;
-    gap: 3rem;
+    gap: 1.75rem;
     font-size: 1.5rem;
     justify-content: space-between;
 }
@@ -116,21 +117,80 @@ section {
     font-weight: 1000;
 }
 
+.overlay {
+    visibility: hidden;
+}
+.click-me {
+    font-weight: 700;
+    visibility: hidden;
+    font-size: 30px;
+    padding: 1rem;
+    margin-top: -45%;
+    color: var(--black);
+}
+
 .proyectos {
     background-color: var(--dun);
     color: var(--black);
 }
 
 .proyectos-contenedor {
-    display: flex;
-    gap: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.75rem;
     justify-content: center;
     align-items: center;
 }
 
 .proyecto {
-    padding: 1rem;
+    padding: 0.6rem;
     background-color: var(--white);
+    border-radius: 2rem;
+    /* font-size: 1rem; */
+}
+
+.proyecto-numero {
+    margin-top: -0.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.proyecto-imagen {
+    border-radius: 2rem;
+    height: 160px;
+    width: 270px;
+}
+
+.proyecto-ligas {
+    margin-top: 0.5rem;
+    margin-bottom: -1rem;
+}
+
+.proyecto-imagen-contenedor {
+    cursor: pointer;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.proyecto-imagen-contenedor:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+.proyecto:hover .click-me {
+    font-size: 400;
+    visibility: visible;
+}
+
+.bi {
+    color: var(--jet);
+    font-size: 2.1rem;
+}
+
+.bi:hover {
+    background-color: var(--dun);
+    color: var(--black);
     border-radius: 1rem;
 }
 
