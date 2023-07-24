@@ -68,9 +68,10 @@ a {
     cursor: pointer;
     text-decoration: none;
     list-style-type: none;
+    font-size: 1.5rem;
+
     display: flex;
     gap: 1.75rem;
-    font-size: 1.5rem;
     justify-content: space-between;
 }
 
@@ -79,6 +80,16 @@ section {
     justify-content: center;
     align-items: center;
     /* border-radius: 1rem; */
+}
+
+.titulo-seccion {
+    margin-block: 1.5rem;
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+#titulo-proyectos {
+    margin-bottom: -0.25rem;
 }
 
 .seccion {
@@ -126,7 +137,7 @@ section {
     font-size: 30px;
     padding: 1rem;
     margin-top: -45%;
-    color: var(--black);
+    color: rgb(0, 0, 0);
 }
 
 .proyectos {
@@ -135,6 +146,7 @@ section {
 }
 
 .proyectos-contenedor {
+    margin-bottom: 2.25rem;
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -157,7 +169,7 @@ section {
 
 .proyecto-imagen {
     border-radius: 2rem;
-    height: 160px;
+    height: 150px;
     width: 270px;
 }
 
@@ -207,10 +219,37 @@ section {
 .trayectoria {
     background-color: var(--black);
     color: var(--white);
+    gap: 7rem;
 }
 
+.trayectoria-tecnologias-contenedor {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.trayectoria-tecnologias {
+    /* background-color: aqua; */
+    margin-top: 2rem;
+    margin-bottom: 2.8rem;
+    gap: 2rem;
+}
 
+.tecnologia-imagen {
+    width: 70px;
+    height: 70px;
+}
 
+.tecnologias {
+    margin-block: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.tecnologias-contenedor {
+    margin-block: 1rem;
+}
 
 
 footer {
