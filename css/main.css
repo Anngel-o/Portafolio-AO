@@ -113,6 +113,7 @@ section {
     color: var(--dun);
     padding: 0.75rem;
     border-radius: 5rem;
+    margin-bottom: -1rem;
 }
 #titulo-trayectoria {
     background-color: var(--dun);
@@ -134,7 +135,7 @@ section {
 }
 
 .principal {
-    background-color: rgba(240, 248, 255, 0.326);
+    background-color: rgba(240, 248, 255, 0.316);
     width: 100%;
     /* opacity: 1; */
     display: flex;
@@ -145,8 +146,12 @@ section {
     gap: 1rem;
     padding: 1rem;
 }
+.principal p {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
 
-.foto {
+.principal .foto {
     border-radius: 150px;
     border:10px solid var(--dun);
     position: relative;
