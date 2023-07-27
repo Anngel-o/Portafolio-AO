@@ -25,7 +25,7 @@ body {
 
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 55%;
+    background-size: 100% 15%;
     width: 100%; 
 }
 
@@ -43,7 +43,7 @@ header {
 a {
     text-decoration: none;
     color: var(--dun);
-    padding: 1rem;
+    padding: 0.55rem;
 }
 
 .liga:hover {
@@ -55,7 +55,7 @@ a {
 .logo {
     cursor: pointer;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
  }
 
  .logo:hover {
@@ -91,7 +91,7 @@ section {
     margin-right: 2rem;
     line-height: 1.75;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
 }
 
 .titulo-seccion {
@@ -106,6 +106,7 @@ section {
     padding: 0.75rem;
     border-radius: 5rem;
     margin-top: -3.5rem;
+    margin-bottom: 2rem;
 }
 #titulo-proyectos {
     margin-bottom: -0.25rem;
@@ -126,6 +127,7 @@ section {
     color: var(--dun);
     padding: 0.75rem;
     border-radius: 5rem;
+    margin-top: -2rem;
 }
 
 .seccion {
@@ -139,11 +141,10 @@ section {
     width: 100%;
     /* opacity: 1; */
     display: flex;
-    margin-top: 6.5rem;
-    margin-bottom: 6.5rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     padding: 1rem;
 }
 .principal p {
@@ -154,6 +155,7 @@ section {
 .principal .foto {
     border-radius: 150px;
     border:10px solid var(--dun);
+    margin-left: 5rem;
     position: relative;
     max-height: 300px;
     max-width: 300px;
@@ -163,9 +165,13 @@ section {
     color: var(--black);
 }
 .hola-mundo {
-    margin-left: 4rem;
-    font-size: 2rem;
+    margin-left: 2rem;
+    font-size: 2.25rem;
     font-weight: 1000;
+}
+.hola-mundo p {
+    color: var(--black);
+    font-size: 2.7rem;
 }
 
 .overlay {
@@ -246,9 +252,15 @@ section {
     border-radius: 1rem;
 }
 
+.button-mas-contenedor {
+    margin-top: -4rem;
+}
+
+
 .contacto {
     background-color: var(--dun);
     color: var(--black);
+    display: grid;
 }
 
 .sobre-mi {
@@ -327,7 +339,7 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 form textarea {
@@ -344,6 +356,28 @@ form textarea {
 .button:hover {
     background-color: var(--black);
     color: var(--dun);
+}
+
+.cv {
+
+}
+.button-cv {
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--jet);
+    color: var(--dun);
+}
+
+.redes {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+.redes-link {
+    color: var(--dun);
+    font-size: 2.5rem;
 }
 
 footer {
