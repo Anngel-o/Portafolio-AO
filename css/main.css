@@ -178,6 +178,7 @@ section {
     visibility: hidden;
 }
 .click-me {
+    opacity: 0;
     font-weight: 700;
     visibility: hidden;
     font-size: 30px;
