@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Montserrat:wght@400;700&family=Roboto:ital,wght@1,300&family=Rubik&display=swap');
 
 :root {
-    --black: #14110F;
+    --black: #333333;
     --white: #F3F3F4;
     --gray: #7E7F83;
-    --jet: #34312D;
-    --dun: #D9C5B2;
+    --jet: #154360;
+    --dun: #F4EDE4;
     --chocolate: #4C212A;
 }
 * {
@@ -83,16 +83,18 @@ section {
 }
 
 .sobre-mi {
-    padding: 5rem;
+    padding: 50px;
     margin-bottom: -4rem;
 }
 
 .p-sobre-mi {
     margin-left: 2rem;
     margin-right: 2rem;
-    line-height: 1.75;
+    line-height: 1.55;
     text-align: justify;
     font-size: 1.35rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 
 .titulo-seccion {
