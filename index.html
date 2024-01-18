@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     <title>Anngel Ortiz</title>
 </head>
 <body>
@@ -260,26 +261,26 @@
             <div class="certificados">
                 <h2>Cursos y Certificados</h2>
                 <div class="certificados-contenedor">
-                    <img src="./certif/Juegos-js.PNG" alt="">
-                    <img src="./certif/Club-programacion.PNG" alt="">
-                    <img src="./certif/Int-cerebrales.PNG" alt="">
-                    <img src="./certif/PixelArt-crehana.PNG" alt="">
-                    <img src="./certif/Programacion-platzi.PNG" alt="">  
-                    <img src="./certif/Movil-google.PNG" alt="">
-                </div>
-                <!-- <embed src="./certif/Club Programación.pdf" src="./certif/Desarrollo Movil.pdf" type="application/pdf" width="100%" height="600px" /> -->
+                    <img src="./certif/Juegos-js.PNG" alt="Certificado Juegos JS" class="certificado-img" data-imagen="./certif/Juegos-js.PNG" onclick="mostrar()">
+                    <img src="./certif/Club-programacion.PNG" alt="Certificado Club Programación" class="certificado-img" data-imagen="./certif/Club-programacion.PNG">
+                    <img src="./certif/Int-cerebrales.PNG" alt="Certificado Int Cerebrales" class="certificado-img" data-imagen="./certif/Int-cerebrales.PNG">
+                    <img src="./certif/PixelArt-crehana.PNG" alt="Certificado PixelArt Crehana" class="certificado-img" data-imagen="./certif/PixelArt-crehana.PNG">
+                    <img src="./certif/Programacion-platzi.PNG" alt="Certificado Programación Platzi" class="certificado-img" data-imagen="./certif/Programacion-platzi.PNG">
+                    <img src="./certif/Movil-google.PNG" alt="Certificado Móvil Google" class="certificado-img" data-imagen="./certif/Movil-google.PNG">
+                    <!-- Agrega más elementos según sea necesario -->
+                </div>   
             </div>
         </div> 
     </section>
     <section class="contacto">
         <div class="seccion">
             <h1 id="titulo-contacto" class="titulo-seccion">Contacto</h1>
-            <form action="https://formspree.io/f/xrgnbonk" method="POST">
-                <textarea placeholder="Contáctame" name="comentario" cols="55" rows="5"></textarea>
-                <input class="button" type="submit" value="Enviar" />
-                <input type="email" name="_replyto" style="display:none"> 
-                <!-- Enviar correo de confirmación al remitente -->
-            </form>
+            <form id="formulario-contacto" action="https://formspree.io/f/xrgnbonk" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="_replyto" placeholder="Tu correo electrónico" required>
+                <textarea name="comentario" placeholder="Contáctame" cols="55" rows="5" required></textarea>
+                <input class="button" type="submit" value="Enviar">
+            </form>            
         </div>
         <div class="cv">
             <a href="./certif/Anngel_Ortiz_CV.pdf" target="_blank" rel="noopener noreferrer">
@@ -308,7 +309,8 @@
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/removeStyle.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
