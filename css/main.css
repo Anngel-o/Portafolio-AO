@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Montserrat:wght@400;700&family=Roboto:ital,wght@1,300&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
 
 :root {
     --black: #333333;
     --white: #F3F3F4;
-    --gray: #7E7F83;
+    --gray: #4a4a4a;
     --jet: #154360;
     --dun: #F4EDE4;
     --chocolate: #4C212A;
@@ -13,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Lato', sans-serif;
     position: relative;
 }
 
@@ -54,15 +58,13 @@ a {
 }
 
 .logo {
+    width: 130px;
     cursor: pointer;
-    font-size: 2rem;
-    padding: 0.5rem;
  }
 
  .logo:hover {
-    background-color: var(--white);
-    color: var(--black);
-    border-radius: 2rem;
+    background-color: var(--gray);
+    border-radius: 5rem;
  }
 
 .menu {
@@ -168,19 +170,47 @@ section {
 .name {
     color: var(--black);
 }
+.hola-mundo .hola-mundo-titulo {
+    font-size: 45px;
+}
+.hola-mundo-texto .parrafo{
+    font-size: 40px;
+    font-family: 'JetBrains Mono', monospace;
+}
+.hola-mundo-texto .name {
+    color: var(--dun);
+    font-family: 'JetBrains Mono', monospace;
+}
 .hola-mundo {
     margin-left: 2rem;
     font-size: 2.25rem;
     font-weight: 1000;
+    
+    overflow: hidden;
 }
 .hola-mundo p {
     color: var(--black);
     font-size: 2.7rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hola-mundo-texto {
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .overlay {
     visibility: hidden;
 }
+
 .click-me {
     opacity: 0;
     font-weight: 700;
@@ -246,6 +276,15 @@ section {
     visibility: visible;
 }
 
+.button-mas-certificados .bi {
+    color: var(--blue); 
+}
+
+.button-mas-certificados .bi:hover {
+    color: var(--white); 
+    background-color: var(--black);
+}
+
 .bi {
     color: var(--jet);
     font-size: 2.1rem;
@@ -265,6 +304,11 @@ section {
     background-color: var(--dun);
     color: var(--black);
     display: grid;
+}
+
+#contacto-informacion {
+    display: flex;
+    gap: 1rem;
 }
 
 .sobre-mi {
@@ -409,7 +453,8 @@ form {
 }
 
 .cv {
-
+    margin-bottom: -1rem;
+    margin-top: -1rem;
 }
 .button-cv {
     border: 0;
@@ -440,7 +485,7 @@ footer {
 .footer-contenedor {
    display: grid;
    grid-template-columns: 1fr;
-   gap: 1.25rem;
+   gap: 1rem;
 }
 
 footer a:hover {
