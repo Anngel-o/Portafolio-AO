@@ -1,4 +1,29 @@
+window.onload = function() {
+  escalarTodosElementos(1)};
+
+window.onresize = function() {
+  escalarTodosElementos(1)
+};
+function escalarTodosElementos(factorEscala) {
+  // Obtén todos los elementos en la página
+  var elementos = document.querySelectorAll('body');
+
+  elementos.forEach(function(elemento) {
+      // Obtén el tamaño actual del elemento
+      var tamanoActual = getComputedStyle(elemento).fontSize;
+
+      // Convierte el tamaño actual a un número
+      var tamanoNumerico = parseFloat(tamanoActual);
+
+      // Calcula el nuevo tamaño aplicando el factor de escala
+      var nuevoTamano = tamanoNumerico * factorEscala;
+
+      // Aplica el nuevo tamaño al elemento
+      elemento.style.fontSize = nuevoTamano + 'px';
+  });
+}
 document.addEventListener("DOMContentLoaded", function () {
+  escalarTodosElementos();
   const logo = document.querySelector(".logo");
   logo.addEventListener("click", () => {
     Swal.fire({
