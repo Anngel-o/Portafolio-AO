@@ -59,7 +59,7 @@ a {
 }
 
 .logo {
-    width: 130px;
+    width: 120px;
     cursor: pointer;
  }
 
@@ -412,12 +412,7 @@ section {
     border-radius: 1rem;
     height: 250px;
     width: 350px;
-}
-.certificados-contenedor img:hover {
-    cursor: pointer;
-    opacity: .75;
-    height: 270px;
-    width: 370px;
+    transition: opacity 0.3s ease-in-out;
 }
 .certificados h2 {
     margin-bottom: 2rem;
@@ -546,152 +541,4 @@ footer a:hover {
     background-color: var(--dun);
     color: var(--black);
     border-radius: 3rem;
-}
-
-@media screen and (min-width: 321px) and (max-width: 767px) {
-    body {
-        width: 100%; 
-    }
-    header {
-        height: 10vh; 
-        padding: 1rem; 
-    }
-    .principal {
-        align-items: center;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        width: 100%; 
-        min-height: auto; 
-        margin-top: 1rem; 
-        margin-bottom: 3rem; 
-        display: grid;
-    }
-    .menu {
-        display: none; 
-    }
-    .principal .foto {
-        max-width: 100%;
-        height: auto;
-        margin-left: 3rem;
-        margin-right: 0rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-    .hola-mundo {
-        margin-left: 0rem;
-        margin-right: 0rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-    .hola-mundo-texto{
-        margin-top: 0rem;
-    }
-    .hola-mundo .hola-mundo-titulo {
-        margin-top: 1rem;
-        font-size: 38px;
-    }
-    .hola-mundo-texto .parrafo{
-        font-size: 25px;
-    }
-    .sobre-mi {
-        padding: 2rem;
-        margin-bottom: 1rem;
-    }
-    .p-sobre-mi {
-        margin-left: 0rem;
-        margin-right: 0rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        line-height: 1.4;
-        text-align: justify;
-        font-size: 1rem;
-        width: 100%;
-        max-width: 100%;
-        white-space: normal;
-    }
-    .titulo-seccion {
-        font-size: 1.5rem;
-    }
-    #titulo-mi {
-        padding: 1rem;
-    }
-    #titulo-proyectos,
-    #titulo-trayectoria,
-    #titulo-contacto {
-        font-size: 1.2rem; 
-        padding: 0.5rem; 
-        margin-bottom: 0.5rem;
-        border-radius: 1rem; 
-    }
-    .club-info {
-        flex-direction: column; 
-        margin-right: 1rem; 
-        margin-left: 1rem;
-    }
-    .club-info-texto {
-        max-width: 100%; 
-        text-align: center; 
-    }
-    .club-info-texto p {
-        font-size: 1rem; 
-    }
-    .club-info-logo {
-        width: 50%; 
-        max-height: 150px; 
-    }
-    .proyectos-contenedor {
-        grid-template-columns: 1fr; 
-    }
-    .proyecto-imagen {
-        width: 100%; 
-    }
-    .proyecto-numero,
-    .proyecto-ligas {
-        margin-bottom: 0.5rem; 
-    }
-    .overlay{
-        margin-top: 2rem;
-        opacity: 1;
-        visibility: visible;
-    }
-    .trayectoria-tecnologias-contenedor,
-    .trayectoria-tecnologias {
-        grid-template-columns: 1fr; 
-    }
-    .tecnologia-imagen {
-        width: 50px; 
-        height: 50px;
-    }
-    .trayectoria-educacion {
-        font-size: 1rem; 
-    }
-    .certificados-contenedor img {
-        width: 100%; 
-        height: auto; 
-    }
-    .button {
-        width: 100%; 
-    }
-    form {
-        width: 100%;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        box-sizing: border-box;
-    }
-    .redes {
-        gap: 0.5rem; 
-    }
-    footer {
-        padding: 1rem; 
-    }
-    .footer-contenedor {
-        gap: 0.5rem; 
-    }
-    footer a:hover {
-        border-radius: 0.5rem;
-    }
 }

@@ -9,31 +9,33 @@ function escalarTodosElementos(factorEscala) {
   var elementos = document.querySelectorAll('body');
 
   elementos.forEach(function(elemento) {
-      // Obtén el tamaño actual del elemento
+      // tamaño actual del elemento
       var tamanoActual = getComputedStyle(elemento).fontSize;
 
-      // Convierte el tamaño actual a un número
+      // convierte el tamaño actual a un número
       var tamanoNumerico = parseFloat(tamanoActual);
 
-      // Calcula el nuevo tamaño aplicando el factor de escala
+      // factor de escala
       var nuevoTamano = tamanoNumerico * factorEscala;
 
-      // Aplica el nuevo tamaño al elemento
       elemento.style.fontSize = nuevoTamano + 'px';
   });
 }
+function mostrarAnngelo() {
+  Swal.fire({
+    title: "¡Bienvenido a Anngelo Systems!",
+    html: "<p style='font-size: 18px;'>Siéntete libre de explorar mis proyectos y ponerte en contacto conmigo para colaboraciones o consultas.</p><p style='font-size: 18.5px;'>¡Gracias por visitar Anngelo Systems!</p>",
+    confirmButtonColor: "#327cae",
+    confirmButtonText: "Aceptar",
+  });
+      
+}
 document.addEventListener("DOMContentLoaded", function () {
   escalarTodosElementos();
+  
   const logo = document.querySelector(".logo");
-  logo.addEventListener("click", () => {
-    Swal.fire({
-      title: "¡Bienvenido a Anngelo Systems!",
-      html: "<p style='font-size: 18px;'>Siéntete libre de explorar mis proyectos y ponerte en contacto conmigo para colaboraciones o consultas.</p><p style='font-size: 18.5px;'>¡Gracias por visitar Anngelo Systems!</p>",
-      confirmButtonColor: "#327cae",
-      confirmButtonText: "Aceptar",
-    });
-        
-  });
+  logo.addEventListener("click", mostrarAnngelo);
+  logo.click();
 
   const certificados = document.querySelectorAll(".certificado-img");
   certificados.forEach((certificado) => {
@@ -65,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Cuando la página se descarga (cerrar la pestaña, navegar a otra página, etc.). o recarga
   window.addEventListener("unload", function (event) {
-    // Restablece el formulario al descargar o recargar la página
+    // Restablecer el formulario al descargar o recargar la página
     if (sessionStorage.getItem("formularioEnviado")) {
       formulario.reset();
     }
