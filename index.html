@@ -1,336 +1,903 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/mediaQuerys.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-    <link rel="icon" href="./img/logoAO.png" type="image/png">
-    <title>Anngelo Systems</title>
-</head>
-<body>
-    <header>
-        <!-- <label class="logo">Ánngel Ortiz</label> -->
-        <img src="./img/logoAO.png" alt="Logo Anngelo Systems" class="logo"></img>
-        <ul class="menu">
-            <li><a class="liga" href="#titulo-mi">Sobre mí</a></li>
-            <li><a class="liga" href="#titulo-proyectos">Proyectos</a></li>
-            <li><a class="liga" href="#titulo-trayectoria">Trayectoria</a></li>
-            <li><a class="liga" href="#titulo-contacto">Contacto</a></li>
-        </ul>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio profesional de Ánngel Ortiz, desarrollador de software junior"
+    />
+    <meta
+      name="keywords"
+      content="desarrollador, software, portafolio, programador, proyectos"
+    />
+    <title>Anngelo Ortiz</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logoAO.png" type="image/png" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./img/logoAO.png" alt="Logo Anngel Ortiz" width="80" />
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section class="principal">
-        <img src="./img/Perfil.jpg" alt="Foto de perfil" class="foto"></img>
-        <div class="hola-mundo container">
-            <p class="hola-mundo-titulo">«Hello World»</p>
-            <br>
-            <div class="hola-mundo-texto">
-                <p class="parrafo">Soy <label class="name">Ánngel Ortiz</label> y soy desarrollador de software junior.</p>
-            </div>
-            <!-- <marquee behavior="scroll" direction="left" height="50px" width="75%" scrollamount="6" scrolldelay="5" align="middle">Soy <label class="name">Ánngel Ortiz</label> y soy desarrollador de software junior.</marquee> -->
-        </div>   
-    </section>
-    <section class="sobre-mi">
-        <div class="seccion">
-            <h1 id="titulo-mi" class="titulo-seccion">Sobre mí</h1>
-            <p class="p-sobre-mi">
-                ¡Hola! Soy Ánngel, un estudiante apasionado de Ingeniería y un entusiasta programador junior.
-                Mi fascinación por la tecnología me impulsa constantemente a explorar nuevas fronteras y aprender habilidades innovadoras.
-                <br><br>
-                En mi viaje académico, lidero un grupo dinámico de estudiantes de Ingeniería, donde creamos equipos creativos dedicados al desarrollo de videojuegos y software de aplicaciones. Esta experiencia no solo me ha permitido aplicar mis conocimientos en un entorno práctico, sino que también me ha enseñado la importancia de la colaboración y la creatividad en el mundo del desarrollo tecnológico.
-                <br><br>
-                <!-- Me encanta sumergirme en desafíos y encontrar soluciones ingeniosas a problemas específicos. Mi enfoque va más allá de simplemente escribir código; me gusta identificar problemáticas y conceptualizar programas que no solo resuelvan tareas, sino que también eleven la experiencia del usuario. -->
-                <!-- <br><br> -->
-                Estoy comprometido a un crecimiento continuo como profesional y contribuir al mundo de la tecnología con soluciones impactantes. Siempre estoy abierto a nuevas oportunidades de aprendizaje y emocionado por lo que el futuro de la programación me depara.
-                <br><br>
-                <center style="font-size: 22px;">¡Vamos a construir algo genial juntos!</center>
-            </p>
-        </div> 
-    </section>
-    <section class="club-contenedor">
-        <div class="club-info">
-            <img class="club-info-logo" src="./img/logo-club.jpeg" alt="Logo programación de videojuegos">
-            <div class="club-info-texto">
-                <h2>Club de Programación de Videojuegos</h2>
-                <p>Como líder apasionado y visionario, he desempeñado un papel fundamental en la creación y dirección de un exitoso club de programación de videojuegos. Nuestra iniciativa no solo busca destacar en la creación de juegos, sino también en dejar una huella duradera en la comunidad. Colaborando estrechamente con la destacada desarrolladora <a href="https://65a202bed3b3d9000840243f--portafolioweb-mariamgarcia.netlify.app/" target="_blank" rel="noopener noreferrer">Mariam García</a>, hemos participado y organizado eventos, talleres y competiciones que no solo promueven la excelencia técnica, sino que también fomentan un sentido de comunidad y pertenencia. </p>
-            </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-right">
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hello World!</span>
+            Soy <span class="hero-name">Ánngel Ortiz</span>
+          </h1>
+          <p class="hero-subtitle">Desarrollador de Software Junior</p>
+          <div class="hero-cta">
+            <a href="#contacto" class="btn btn-primary">Contáctame</a>
+            <a
+              href="./certif/CV-Anngel-Ortiz.pdf"
+              target="_blank"
+              download
+              class="btn btn-secondary"
+              >Descargar CV</a
+            >
+          </div>
         </div>
-    </section>
-    <section class="proyectos">
-        <div class="seccion">
-            <h1 id="titulo-proyectos" class="titulo-seccion">Proyectos</h1>
-            <div class="proyectos-contenedor">
-                <div class="proyecto">
-                    <p class="proyecto-numero">Portafolio Web</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/portafolio.PNG" alt="" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5"/>
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/Portafolio-AO" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://anngel-o.github.io/Portafolio-AO/" target="_blank"><i class="bi bi-laptop"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <p class="proyecto-numero">Pokedex</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/pokedex.PNG" alt="Pokedex" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5"/>
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/Pokedex-PokeAPI" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://anngel-o.github.io/Pokedex-PokeAPI/" target="_blank"><i class="bi bi-laptop"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <p class="proyecto-numero">E-commerce</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/e-commerce.PNG" alt="E-commerce" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5"/>
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/E-Commerce-Adlet" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://anngel-o.github.io/E-Commerce-Adlet/" target="_blank"><i class="bi bi-laptop"></i></a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="proyecto">
-                    <p class="proyecto-numero">Cifrador César</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/cifrador.png" alt="" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5"/>
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/Cifrador-Cesar" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://anngel-o.github.io/Cifrador-Cesar/" target="_blank"><i class="bi bi-laptop"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <p class="proyecto-numero">App Clima</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/app-clima.png" alt="App clima" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5"/>
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/App-Clima-API" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://anngel-o.github.io/App-Clima-API/" target="_blank"><i class="bi bi-laptop"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <p class="proyecto-numero">App Rick & Morty</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/rickmorty.PNG" alt="App Rick & Morty" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="35" height="35" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-ionic-a-complete-open-source-sdk-for-hybrid-mobile-app-development-logo-color-tal-revivo.png" alt="ionic"/>
-                        <img width="35" height="35" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-angular-a-typescript-based-open-source-web-application-framework-logo-color-tal-revivo.png" alt="angular"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/Rick-MortyAPI-Ionic" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://rickmorty-ionic.netlify.app" target="_blank"><i class="bi bi-laptop"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <p class="proyecto-numero">Pong 2D</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/pong.PNG" alt="Pong 2D" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="50" height="50" src="https://img.icons8.com/nolan/64/unity.png" alt="unity"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/c-sharp-logo.png" alt="c-sharp-logo"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/Pong-Unity2D" target="_blank"><i class="bi bi-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <p class="proyecto-numero"> First Person Shooter</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/fps.png" alt="First Person Shooter" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="50" height="50" src="https://img.icons8.com/nolan/64/unity.png" alt="unity"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/c-sharp-logo.png" alt="c-sharp-logo"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/FPS-Zombies-Unity3D" target="_blank"><i class="bi bi-github"></i></a>
-                            <!-- <a href="https://anngel-o.github.io/Portafolio-AO/" target="_blank"><i class="bi bi-laptop"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="proyecto">
-                    <p class="proyecto-numero">Portafolio Web</p>
-                    <div class="proyecto-imagen-contenedor">
-                        <img  src="./img/fondo.jpg" alt="" class="proyecto-imagen"></img> 
-                        <h6 class="click-me">Click Me</h6>
-                    </div>
-                    <div class="overlay">
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
-                        <img width="45" height="45" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-                        <img width="45" height="45" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript"/>
-                    </div>
-                    <div class="proyecto-ligas">
-                        <div class="proyecto-iconos">
-                            <a href="https://github.com/Anngel-o/Portafolio-AO" target="_blank"><i class="bi bi-github"></i></a>
-                            <a target="_blank" href="https://anngel-o.github.io/Portafolio-AO/" target="_blank"><i class="bi bi-laptop"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-            <div class="button-mas-contenedor">
-                <a class="button-mas" href="https://github.com/Anngel-o?tab=stars" target="_blank"><i class="bi bi-plus-circle"></i></a>
-            </div>
-        </div>   
-    </section>
-    <section class="trayectoria">
-        <div class="seccion">
-            <h1 id="titulo-trayectoria" class="titulo-seccion">Trayectoria</h1>
-            <div class="trayectoria-tecnologias">
-                <h2>Tecnologías y Lenguajes</h2>
-                <div class="trayectoria-tecnologias-contenedor">
-                    <div class="tecnologias">
-                        <div class="tecnologias-contenedor">
-                            <img class="tecnologia-imagen" width="45" height="45" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5"/>
-                            <img class="tecnologia-imagen" width="45" height="45" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-                            <img class="tecnologia-imagen" width="45" height="45" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript"/>
-                            <img width="58" height="58" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-angular-a-typescript-based-open-source-web-application-framework-logo-color-tal-revivo.png" alt="angular"/>
-                        </div>
-                        <h4>Desarrollo frontend</h4>                        
-                    </div>
-                    <div class="tecnologias">
-                        <div class="tecnologias-contenedor">
-                            <img class="tecnologia-imagen" width="80" height="80" src="https://img.icons8.com/color/96/spring-logo.png" alt="spring-logo"/>
-                            <img width="64" height="64" src="https://img.icons8.com/color/48/nestjs.png" alt="nestjs"/>
-                            <img class="tecnologia-imagen" width="96" height="96" src="https://img.icons8.com/color/96/mysql-logo.png" alt="mysql-logo"/>
-                            <img width="64" height="64" src="https://img.icons8.com/nolan/64/mongo-db.png" alt="mongo-db"/>
-                        </div>
-                        <h4>Desarrollo backend</h4>
-                    </div>
-                    <div class="tecnologias">
-                        <div class="tecnologias-contenedor">
-                            <img class="tecnologia-imagen" width="96" height="96" src="https://img.icons8.com/color/96/flutter.png" alt="flutter"/>
-                            <img class="tecnologia-imagen" width="96" height="96" src="https://img.icons8.com/color/96/android-studio--v3.png" alt="android-studio"/>
-                            <img width="48" height="48" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-ionic-a-complete-open-source-sdk-for-hybrid-mobile-app-development-logo-color-tal-revivo.png" alt="ionic"/>
-                        </div>
-                        <h4>Desarrollo móvil</h4>
-                    </div>
-                    <div class="tecnologias">
-                        <div class="tecnologias-contenedor">
-                            <img class="tecnologia-imagen" width="96" height="96" src="https://img.icons8.com/nolan/96/unity.png" alt="unity"/>
-                            <img class="tecnologia-imagen" width="96" height="96" src="https://img.icons8.com/color/96/c-sharp-logo.png" alt="c-sharp-logo"/>
-                            <img class="tecnologia-imagen" width="96" height="96" src="https://img.icons8.com/color/96/blender-3d.png" alt="blender-3d"/>
-                        </div>
-                        <h4>Desarrollo de videojuegos</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="trayectoria-educacion">
-                <h2>Universidad Autonóma de Chihuahua</h2>
-                <p>Ingeniería en Ciencias de la Computación</p>
-            </div>
-            <div class="certificados">
-                <h2>Cursos y Certificados</h2>
-                <div class="certificados-contenedor">
-                    <img src="./certif/Juegos-js.PNG" alt="Certificado Juegos JS" class="certificado-img" data-imagen="./certif/Juegos-js.PNG">
-                    <img src="./certif/Club-programacion.PNG" alt="Certificado Club Programación" class="certificado-img" data-imagen="./certif/Club-programacion.PNG">
-                    <img src="./certif/Int-cerebrales.PNG" alt="Certificado Int Cerebrales" class="certificado-img" data-imagen="./certif/Int-cerebrales.PNG">
-                    <img src="./certif/PixelArt-crehana.PNG" alt="Certificado PixelArt Crehana" class="certificado-img" data-imagen="./certif/PixelArt-crehana.PNG">
-                    <img src="./certif/Programacion-platzi.PNG" alt="Certificado Programación Platzi" class="certificado-img" data-imagen="./certif/Programacion-platzi.PNG">
-                    <img src="./certif/Movil-google.PNG" alt="Certificado Móvil Google" class="certificado-img" data-imagen="./certif/Movil-google.PNG">
-                    <!-- Agrega más elementos según sea necesario -->
-                </div>   
-                <div class="button-mas-certificados-contenedor">
-                    <a class="button-mas-certificados" href="https://mega.nz/folder/dn4iQRKB#t7qv1FYFR3F0QjLrV0FgHA" target="_blank"><i class="bi bi-plus-circle"></i></a>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <section class="contacto">
-        <div class="seccion">
-            <h1 id="titulo-contacto" class="titulo-seccion">Contacto</h1>
-            <form id="formulario-contacto" action="https://formspree.io/f/xrgnbonk" method="POST">
-                <div id="contacto-informacion">
-                    <input type="text" name="nombre" placeholder="Tu nombre" required>
-                    <input type="email" name="_replyto" placeholder="Tu correo electrónico" required>
-                </div>
-                <textarea name="comentario" placeholder="Contáctame" cols="55" rows="5" required></textarea>
-                <input class="button" type="submit" value="Enviar">
-            </form>            
+
+        <div class="hero-image" data-aos="fade-left">
+          <img
+            src="./img/Perfil.jpg"
+            alt="Foto de perfil de Ánngel Ortiz"
+            class="profile-img"
+          />
+          <div class="hero-image-decor"></div>
         </div>
-        <div class="cv">
-            <a href="./certif/CV-Anngel-Ortiz.pdf" target="_blank" rel="noopener noreferrer">
-                <button class="button-cv" type="button">Descarga mi CV <i class="bi-box-arrow-down"></i></button> 
-            </a>
-        </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="footer-contenedor">
-            <div class="redes">
-                <div>
-                    <a href="https://github.com/Anngel-o" target="_blank" class="redes-link"><i class="bi-github"></i></a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/anngel-ortiz-175910283/" target="_blank" class="redes-link"><i class="bi-linkedin"></i></a>
-                </div>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section about">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Sobre mí</h2>
+
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <p>
+              ¡Hola! Soy Ánngel, un estudiante apasionado de Ingeniería y un
+              entusiasta programador junior. Mi fascinación por la tecnología me
+              impulsa constantemente a explorar nuevas fronteras y aprender
+              habilidades innovadoras.
+            </p>
+            <p>
+              En mi viaje académico, lidero un grupo dinámico de estudiantes de
+              Ingeniería, donde creamos equipos creativos dedicados al
+              desarrollo de videojuegos y software de aplicaciones. Esta
+              experiencia no solo me ha permitido aplicar mis conocimientos en
+              un entorno práctico, sino que también me ha enseñado la
+              importancia de la colaboración y la creatividad en el mundo del
+              desarrollo tecnológico.
+            </p>
+            <p>
+              Estoy comprometido a un crecimiento continuo como profesional y
+              contribuir al mundo de la tecnología con soluciones impactantes.
+              Siempre estoy abierto a nuevas oportunidades de aprendizaje y
+              emocionado por lo que el futuro de la programación me depara.
+            </p>
+            <p class="about-highlight">
+              ¡Vamos a construir algo genial juntos!
+            </p>
+          </div>
+
+          <div class="about-club" data-aos="fade-left">
+            <div class="club-card">
+              <img
+                src="./img/logo-club.jpeg"
+                alt="Logo del club de programación"
+                class="club-logo"
+              />
+              <div class="club-info">
+                <h3>Club de Programación de Videojuegos</h3>
+                <p>
+                  Como líder apasionado y visionario, he desempeñado un papel
+                  fundamental en la creación y dirección de un exitoso club de
+                  programación de videojuegos. Nuestra iniciativa no solo busca
+                  destacar en la creación de juegos, sino también en dejar una
+                  huella duradera en la comunidad.
+                </p>
+                <p>
+                  Colaborando estrechamente con la destacada desarrolladora
+                  <a
+                    href="https://65a202bed3b3d9000840243f--portafolioweb-mariamgarcia.netlify.app/"
+                    target="_blank"
+                    >Mariam García</a
+                  >, hemos participado y organizado eventos, talleres y
+                  competiciones que promueven la excelencia técnica.
+                </p>
+              </div>
             </div>
-            <div>
-                <a href="mailto:anngelo.sys@gmail.com" target="_blank">anngelo.sys@gmail.com</a>
-            </div>
-            <!-- <div>
-                <span>icon by<a href="https://icons8.com">Icons8</a></span>
-            </div> -->
-            <p>By Anngelo Systems 2023 ©</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section projects">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Mis Proyectos</h2>
+
+        <div class="swiper mySwiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <!-- Proyecto 1 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/portafolio.PNG" alt="Portafolio Web" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      src="https://img.icons8.com/color/48/html-5--v1.png"
+                      alt="HTML5"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/48/css3.png"
+                      alt="CSS3"
+                    />
+                    <img
+                      src="https://img.icons8.com/fluency/48/javascript.png"
+                      alt="JavaScript"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/Portafolio-AO"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                    <a
+                      href="https://anngel-o.github.io/Portafolio-AO/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-eye"></i> Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Portafolio Web</h3>
+                <p>
+                  Mi primer portafolio personal desarrollado con HTML, CSS y
+                  JavaScript.
+                </p>
+              </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/pokedex.PNG" alt="Pokedex" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      src="https://img.icons8.com/color/48/html-5--v1.png"
+                      alt="HTML5"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/48/css3.png"
+                      alt="CSS3"
+                    />
+                    <img
+                      src="https://img.icons8.com/fluency/48/javascript.png"
+                      alt="JavaScript"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/Pokedex-PokeAPI"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                    <a
+                      href="https://anngel-o.github.io/Pokedex-PokeAPI/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-eye"></i> Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Pokedex</h3>
+                <p>
+                  Aplicación web que consume la PokeAPI para mostrar información
+                  de Pokémon.
+                </p>
+              </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/e-commerce.PNG" alt="E-commerce" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      src="https://img.icons8.com/color/48/html-5--v1.png"
+                      alt="HTML5"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/48/css3.png"
+                      alt="CSS3"
+                    />
+                    <img
+                      src="https://img.icons8.com/fluency/48/javascript.png"
+                      alt="JavaScript"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/E-Commerce-Adlet"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                    <a
+                      href="https://anngel-o.github.io/E-Commerce-Adlet/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-eye"></i> Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>E-commerce</h3>
+                <p>
+                  Tienda en línea ficticia con funcionalidad básica de carrito
+                  de compras.
+                </p>
+              </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/cifrador.png" alt="Cifrador César" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      src="https://img.icons8.com/color/48/html-5--v1.png"
+                      alt="HTML5"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/48/css3.png"
+                      alt="CSS3"
+                    />
+                    <img
+                      src="https://img.icons8.com/fluency/48/javascript.png"
+                      alt="JavaScript"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/Cifrador-Cesar"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                    <a
+                      href="https://anngel-o.github.io/Cifrador-Cesar/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-eye"></i> Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Cifrador César</h3>
+                <p>
+                  Herramienta para cifrar y descifrar mensajes usando el
+                  algoritmo César.
+                </p>
+              </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/app-clima.png" alt="App Clima" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      src="https://img.icons8.com/color/48/html-5--v1.png"
+                      alt="HTML5"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/48/css3.png"
+                      alt="CSS3"
+                    />
+                    <img
+                      src="https://img.icons8.com/fluency/48/javascript.png"
+                      alt="JavaScript"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/App-Clima-API"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                    <a
+                      href="https://anngel-o.github.io/App-Clima-API/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-eye"></i> Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>App Clima</h3>
+                <p>
+                  Aplicación que muestra el clima actual usando una API
+                  meteorológica.
+                </p>
+              </div>
+            </div>
+
+            <!-- Proyecto 6 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/rickmorty.PNG" alt="App Rick & Morty" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      width="35"
+                      height="35"
+                      src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-ionic-a-complete-open-source-sdk-for-hybrid-mobile-app-development-logo-color-tal-revivo.png"
+                      alt="ionic"
+                    />
+                    <img
+                      width="35"
+                      height="35"
+                      src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-angular-a-typescript-based-open-source-web-application-framework-logo-color-tal-revivo.png"
+                      alt="angular"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/Rick-MortyAPI-Ionic"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                    <a
+                      href="https://rickmorty-ionic.netlify.app"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-eye"></i> Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>App Rick & Morty</h3>
+                <p>
+                  Aplicación móvil que consume la API de Rick & Morty,
+                  desarrollada con Ionic y Angular.
+                </p>
+              </div>
+            </div>
+
+            <!-- Proyecto 7 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/pong.PNG" alt="Pong 2D" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      width="50"
+                      height="50"
+                      src="https://img.icons8.com/nolan/64/unity.png"
+                      alt="unity"
+                    />
+                    <img
+                      width="45"
+                      height="45"
+                      src="https://img.icons8.com/fluency/48/c-sharp-logo.png"
+                      alt="c-sharp-logo"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/Pong-Unity2D"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Pong 2D</h3>
+                <p>Clásico juego Pong recreado en Unity con C#.</p>
+              </div>
+            </div>
+
+            <!-- Proyecto 8 -->
+            <div class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="./img/fps.png" alt="First Person Shooter" />
+                <div class="project-overlay">
+                  <div class="project-tech">
+                    <img
+                      width="50"
+                      height="50"
+                      src="https://img.icons8.com/nolan/64/unity.png"
+                      alt="unity"
+                    />
+                    <img
+                      width="45"
+                      height="45"
+                      src="https://img.icons8.com/fluency/48/c-sharp-logo.png"
+                      alt="c-sharp-logo"
+                    />
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Anngel-o/FPS-Zombies-Unity3D"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>First Person Shooter</h3>
+                <p>Juego FPS con zombies desarrollado en Unity 3D.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="projects-more" data-aos="fade-up">
+          <a
+            href="https://github.com/Anngel-o?tab=stars"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            Ver más proyectos <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section skills">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Mis Habilidades</h2>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-header">
+              <i class="bi bi-layout-text-sidebar-reverse"></i>
+              <h3>Desarrollo Frontend</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/html-5--v1.png"
+                  alt="HTML5"
+                />
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/css3.png"
+                  alt="CSS3"
+                />
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/fluency/48/javascript.png"
+                  alt="JavaScript"
+                />
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-angular-a-typescript-based-open-source-web-application-framework-logo-color-tal-revivo.png"
+                  alt="angular"
+                />
+                <span>Angular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-header">
+              <i class="bi bi-server"></i>
+              <h3>Desarrollo Backend</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/spring-logo.png"
+                  alt="Spring"
+                />
+                <span>Spring</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/nestjs.png"
+                  alt="NestJS"
+                />
+                <span>NestJS</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/mysql-logo.png"
+                  alt="MySQL"
+                />
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/nolan/48/mongo-db.png"
+                  alt="MongoDB"
+                />
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Móvil -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-header">
+              <i class="bi bi-phone"></i>
+              <h3>Desarrollo Móvil</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/flutter.png"
+                  alt="Flutter"
+                />
+                <span>Flutter</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/android-studio--v3.png"
+                  alt="Android Studio"
+                />
+                <span>Android</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-ionic-a-complete-open-source-sdk-for-hybrid-mobile-app-development-logo-color-tal-revivo.png"
+                  alt="ionic"
+                />
+                <span>Ionic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Videojuegos -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-header">
+              <i class="bi bi-controller"></i>
+              <h3>Desarrollo de Videojuegos</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/nolan/48/unity.png"
+                  alt="Unity"
+                />
+                <span>Unity</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/c-sharp-logo.png"
+                  alt="C#"
+                />
+                <span>C#</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/blender-3d.png"
+                  alt="Blender"
+                />
+                <span>Blender</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Educación -->
+        <div class="education" data-aos="fade-up">
+          <div class="education-card">
+            <i class="bi bi-mortarboard"></i>
+            <div>
+              <h3>Universidad Autónoma de Chihuahua</h3>
+              <p>Ingeniería en Ciencias de la Computación</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificados -->
+        <div class="certificates" data-aos="fade-up">
+          <h3 class="certificates-title">Certificados y Cursos</h3>
+
+          <div class="certificates-grid">
+            <div class="certificate-item">
+              <img
+                src="./certif/Juegos-js.PNG"
+                alt="Certificado Juegos JS"
+                class="certificate-img"
+              />
+              <div class="certificate-overlay">
+                <span>Ver certificado</span>
+              </div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="./certif/Club-programacion.PNG"
+                alt="Certificado Club Programación"
+                class="certificate-img"
+              />
+              <div class="certificate-overlay">
+                <span>Ver certificado</span>
+              </div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="./certif/Int-cerebrales.PNG"
+                alt="Certificado Int Cerebrales"
+                class="certificate-img"
+              />
+              <div class="certificate-overlay">
+                <span>Ver certificado</span>
+              </div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="./certif/PixelArt-crehana.PNG"
+                alt="Certificado PixelArt Crehana"
+                class="certificate-img"
+              />
+              <div class="certificate-overlay">
+                <span>Ver certificado</span>
+              </div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="./certif/Programacion-platzi.PNG"
+                alt="Certificado Programación Platzi"
+                class="certificate-img"
+              />
+              <div class="certificate-overlay">
+                <span>Ver certificado</span>
+              </div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="./certif/Movil-google.PNG"
+                alt="Certificado Móvil Google"
+                class="certificate-img"
+              />
+              <div class="certificate-overlay">
+                <span>Ver certificado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="certificates-more">
+            <a
+              href="https://mega.nz/folder/dn4iQRKB#t7qv1FYFR3F0QjLrV0FgHA"
+              target="_blank"
+              class="btn btn-outline"
+            >
+              Ver más certificados <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contáctame</h2>
+
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>¡Hablemos!</h3>
+            <p>
+              Si estás interesado en trabajar conmigo o simplemente quieres
+              saludar, no dudes en contactarme. Estoy siempre abierto a nuevas
+              oportunidades y colaboraciones.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:anngelo.sys@gmail.com">anngelo.sys@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-linkedin"></i>
+                <a
+                  href="https://www.linkedin.com/in/anngel-ortiz-175910283/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/Anngel-o" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <form
+            id="contact-form"
+            class="contact-form"
+            data-aos="fade-left"
+            action="https://formspree.io/f/xrgnbonk"
+            method="POST"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Tu correo electrónico"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Tu mensaje"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar mensaje <i class="bi bi-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./img/logoAO.png" alt="Anngelo Systems" width="60" />
+            <span>Anngelo Systems</span>
+          </div>
+
+          <div class="footer-links">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://github.com/Anngel-o" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/anngel-ortiz-175910283/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="mailto:anngelo.sys@gmail.com"
+              ><i class="bi bi-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>
+            &copy; <span id="year"></span> Anngelo Systems. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
     </footer>
 
+    <!-- Modal para certificados -->
+    <div class="modal" id="certificateModal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/removeStyle.js"></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
