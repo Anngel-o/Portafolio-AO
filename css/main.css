@@ -1,9 +1,9 @@
 /* Variables */
 :root {
   /* Colores */
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --secondary: #7c3aed;
+  --primary: #825748;
+  --primary-dark: #9e9795;
+  --secondary: #a1887f;
   --dark: #1e293b;
   --dark-alt: #334155;
   --light: #f1f5f9;
@@ -104,7 +104,7 @@ button {
 
 .section-title {
   font-size: 2.5rem;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-1xl);
   text-align: center;
   position: relative;
   color: var(--dark);
@@ -160,6 +160,7 @@ button {
   border: 2px solid var(--primary);
   color: var(--primary);
   background-color: transparent;
+  margin-bottom: var(--space-3xl);
 }
 
 .btn-outline:hover {
@@ -418,6 +419,7 @@ button {
 .club-card {
   display: flex;
   align-items: center;
+  margin-top: var(--space-2xl);
   gap: var(--space-2xl);
   background-color: var(--white);
   border-radius: var(--border-radius-lg);
@@ -469,12 +471,14 @@ button {
 
 /* Projects Section */
 .projects {
-  background-color: var(--light);
+  background-color: var(--white);
+  margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   margin-top: var(--space-xl);
   padding-bottom: var(--space-2xl);
 }
@@ -502,7 +506,6 @@ button {
 }
 
 .project-image {
-  position: relative;
   height: 200px;
   overflow: hidden;
 }
@@ -510,7 +513,7 @@ button {
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: transform 0.5s ease;
 }
 
@@ -547,7 +550,6 @@ button {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
 
@@ -595,7 +597,7 @@ button {
 .projects-more {
   display: flex;
   justify-content: center;
-  margin-top: var(--space-xl);
+  margin-top: var(--space-2xl);
 }
 
 .swiper-pagination-bullet {
@@ -634,7 +636,7 @@ button {
 
 /* Skills Section */
 .skills {
-  background-color: var(--white);
+  background-color: var(--light);
 }
 
 .skills-grid {
@@ -709,7 +711,8 @@ button {
 }
 
 .education {
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-3xl);
 }
 
 .education-card {
@@ -741,6 +744,8 @@ button {
 
 .certificates {
   margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  background-color: var(--white);
 }
 
 .certificates-title {
@@ -793,7 +798,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(37, 99, 235, 0.8);
+  background-color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -814,7 +819,7 @@ button {
 .certificates-more {
   display: flex;
   justify-content: center;
-  margin-top: var(--space-xl);
+  margin-top: var(--space-2xl);
 }
 
 /* Contact Section */
@@ -1242,4 +1247,144 @@ button {
 [data-aos="flip-left"].aos-animate {
   transform: perspective(1000px) rotateY(0);
   opacity: 1;
+}
+
+/* News Styles */
+/* News Section */
+.news {
+  background-color: var(--light);
+  margin-top: -70px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.news-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.news-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-image {
+  transform: scale(1.05);
+}
+
+.news-content {
+  padding: 1.5rem;
+}
+
+.news-date {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.news-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.news-excerpt {
+  color: var(--dark-alt);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.news-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.news-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.news-link i {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.news-link:hover i {
+  transform: translateX(3px);
+}
+
+.loading-spinner {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.text-center {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dark mode styles */
+.dark .news {
+  background-color: var(--dark);
+}
+
+.dark .news-card {
+  background-color: var(--dark-alt);
+}
+
+.dark .news-title {
+  color: var(--light);
+}
+
+.dark .news-excerpt {
+  color: var(--light-alt);
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
 }

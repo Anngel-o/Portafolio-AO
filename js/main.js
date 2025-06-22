@@ -2,7 +2,7 @@ function mostrarAnngelo() {
   Swal.fire({
     title: "¡Bienvenido a Anngelo Systems!",
     html: "<p style='font-size: 18px;'>Siéntete libre de explorar mis proyectos y ponerte en contacto conmigo para colaboraciones o consultas.</p><p style='font-size: 18.5px;'>¡Gracias por visitar Anngelo Systems!</p>",
-    confirmButtonColor: "#327cae",
+    confirmButtonColor: "#825748",
     confirmButtonText: "Aceptar",
   });
 }

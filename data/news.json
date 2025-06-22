@@ -1,0 +1,28 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Con los juegos Chacarito y Teporaca CuackerStudios arrasa en la Ludic Jam CUU 2025",
+      "date": "17 Mayo 2025",
+      "excerpt": "Nuestros juegos Chacarito y Teporaca destacaron en las dos categorias: Mejor Juego por Jurado y Juego más Votado por el Público.",
+      "image": "./img/new1.jpg",
+      "link": "https://www.tiempo.com.mx/noticia/cuackerstudios_uach_curso_ninos_videojuegos_arrasa_en_ludic_jam_cuu_2025_itesm_tecnologico_de_monterrey/"
+    },
+    {
+      "id": 2,
+      "title": "CuackerStudios gana beca de incubación en el Tec de Monterrey",
+      "date": "6 Abril 2025",
+      "excerpt": " CuackerStudios ha sido seleccionado para recibir una beca de incubación de startups en el Tecnológico de Monterrey, una oportunidad que potenciará nuestro crecimiento y desarrollo en la industria de los videojuegos.",
+      "image": "./img/new2.jpg",
+      "link": "https://oem.com.mx/elheraldodechihuahua/gossip/con-los-juegos-teporaca-y-chacarito-club-uach-videogames-studio-sobresale-en-la-ludic-jam-cuu-22604789"
+    },
+    {
+      "id": 3,
+      "title": "CuackerStudios con el juego Dogger obtiene el primer lugar en la Guauf Jam Otoño",
+      "date": "20 Octubre 2024",
+      "excerpt": "En un fin de semana lleno de creatividad y pasión por los videojuegos, CuackerStudios se alzó con el primer lugar en la Guauf Jam Otoño 2024 con su atractivo juego Dogger.",
+      "image": "./img/new3.jpg",
+      "link": "https://puentelibre.mx/noticia/videojuego_uach_gano_primer_lugar_guauf_jam_dogger/"
+    }
+  ]
+}
